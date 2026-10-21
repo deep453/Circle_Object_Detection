@@ -13,10 +13,6 @@ An end-to-end computer vision pipeline for detecting synthetic and real-world ge
 
 Bounding box coordinates $(x_{min}, y_{min}, x_{max}, y_{max})$ provided in pixel space are transformed and normalized to relative continuous coordinates $[0.0, 1.0]$ based on image width $W$ and height $H$:
 
-$$x_{norm} = \frac{\max(0, \min(W, x_{min} + \text{box\_length}))}{W}$$
-
-$$y_{norm} = \frac{\max(0, \min(H, y_{min} + \text{box\_width}))}{H}$$
-
 ---
 
 ## 🏗 System Architecture
